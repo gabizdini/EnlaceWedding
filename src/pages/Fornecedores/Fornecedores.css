@@ -1,0 +1,141 @@
+.vendors-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.map-placeholder {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid rgba(108, 92, 231, 0.08);
+}
+
+.map-placeholder svg {
+  width: 100%;
+  height: auto;
+}
+
+.map-label {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+
+.vendors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.supplier-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.supplier-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 32px 0;
+}
+
+.supplier-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--purple);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.supplier-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.supplier-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.supplier-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--white);
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.supplier-preview-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.supplier-preview-card strong {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.preview-cat {
+  font-size: 0.8rem;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.preview-rating {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.preview-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--lilac));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.preview-avatar.lilac {
+  background: linear-gradient(135deg, var(--lilac), #C4B5FD);
+}
+
+.preview-avatar span {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .vendors-layout,
+  .supplier-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,38 @@
+.feature-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+  border: 1px solid rgba(108, 92, 231, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(108, 92, 231, 0.15);
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(108, 92, 231, 0.08);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

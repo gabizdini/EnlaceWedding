@@ -1,0 +1,62 @@
+.vendor-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(108, 92, 231, 0.08);
+  transition: var(--transition);
+}
+
+.vendor-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(108, 92, 231, 0.15);
+}
+
+.vendor-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--lilac));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vendor-avatar span {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.vendor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.vendor-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.vendor-category {
+  font-size: 0.8rem;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.vendor-meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.vendor-rating,
+.vendor-distance {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}

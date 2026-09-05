@@ -1,0 +1,50 @@
+.section-title {
+  margin-bottom: 48px;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-subtitle {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--purple);
+  margin-bottom: 12px;
+  background: rgba(108, 92, 231, 0.08);
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.section-title.center .section-description {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
