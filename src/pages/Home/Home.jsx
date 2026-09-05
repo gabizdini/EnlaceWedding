@@ -3,6 +3,7 @@ import BenefitCard from '../../components/BenefitCard/BenefitCard'
 import { MapPin, ClipboardList, Coins, Lightbulb } from '../../components/Icons'
 import CTA from '../../components/CTA/CTA'
 import heroImg from '../../assets/images/sequel-wedding-casamento-em-sequencia.png'
+import heroImgMobile from '../../assets/images/sequel-wedding-buque.png'
 import './Home.css'
 
 const benefits = [
@@ -16,7 +17,7 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
+      <section className="hero" style={{ '--hero-img': `url(${heroImg})`, '--hero-img-mobile': `url(${heroImgMobile})` }}>
         <div className="hero-overlay"></div>
         <div className="hero-container container">
           <div className="hero-content">
@@ -57,8 +58,8 @@ function Home() {
       <CTA
         title="Pronto para comecar a planejar?"
         description="Tenha suas ideias, tarefas e fornecedores organizados em um so lugar."
-        buttonText="Comecar a planejar"
-        buttonTo="/"
+        buttonText="Como funciona?"
+        buttonTo="/como-funciona"
       />
     </>
   )
