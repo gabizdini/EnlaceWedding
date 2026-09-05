@@ -1,18 +1,19 @@
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
+import { FileText, Calendar, Wallet, Coins, Users, MapPin, Lightbulb, CheckCircle, Send } from '../../components/Icons'
 import CTA from '../../components/CTA/CTA'
 import './Recursos.css'
 
 const resources = [
-  { icon: '\uD83D\uDCC4', title: 'Planejamento', description: 'Organize tarefas e prazos de forma simples com um checklist completo.' },
-  { icon: '\uD83D\uDCC5', title: 'Cronograma', description: 'Monte um cronograma visual para acompanhar cada etapa do planejamento.' },
-  { icon: '\uD83D\uDCB3', title: 'Orcamento e gastos', description: 'Controle cada centavo do seu casamento com categorias e metas.' },
-  { icon: '\uD83D\uDCB0', title: 'Controle de gastos', description: 'Acompanhe quanto gastou e o que ainda falta em tempo real.' },
-  { icon: '\uD83D\uDC65', title: 'Lista de convidados', description: 'Gerencie convites, confirmacoes e presenca de forma organizada.' },
-  { icon: '\uD83D\uDCCD', title: 'Fornecedores locais', description: 'Encontre os melhores profissionais da sua regiao com avaliacoes.' },
-  { icon: '\uD83D\uDCA1', title: 'Inspiracoes', description: 'Salve imagens e referencias de vestidos, decoracao, maquiagem e mais.' },
-  { icon: '\u2705', title: 'Meus fornecedores', description: 'Acompanhe os profissionais que voce ja contratou.' },
-  { icon: '\uD83D\uDCEF', title: 'Localizacao', description: 'Veja a distancia dos fornecedores em relacao ao local do evento.' },
+  { icon: <FileText />, title: 'Planejamento', description: 'Organize tarefas e prazos de forma simples com um checklist completo.' },
+  { icon: <Calendar />, title: 'Cronograma', description: 'Monte um cronograma visual para acompanhar cada etapa do planejamento.' },
+  { icon: <Wallet />, title: 'Orcamento e gastos', description: 'Controle cada centavo do seu casamento com categorias e metas.' },
+  { icon: <Coins />, title: 'Controle de gastos', description: 'Acompanhe quanto gastou e o que ainda falta em tempo real.' },
+  { icon: <Users />, title: 'Lista de convidados', description: 'Gerencie convites, confirmacoes e presenca de forma organizada.' },
+  { icon: <MapPin />, title: 'Fornecedores locais', description: 'Encontre os melhores profissionais da sua regiao com avaliacoes.' },
+  { icon: <Lightbulb />, title: 'Inspiracoes', description: 'Salve imagens e referencias de vestidos, decoracao, maquiagem e mais.' },
+  { icon: <CheckCircle />, title: 'Meus fornecedores', description: 'Acompanhe os profissionais que voce ja contratou.' },
+  { icon: <Send />, title: 'Localizacao', description: 'Veja a distancia dos fornecedores em relacao ao local do evento.' },
 ]
 
 function Recursos() {

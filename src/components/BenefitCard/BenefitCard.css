@@ -18,8 +18,13 @@
 }
 
 .benefit-icon {
-  font-size: 1.8rem;
   margin-bottom: 12px;
+  color: var(--purple);
+}
+
+.benefit-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .benefit-title {

@@ -59,4 +59,13 @@
 .vendor-distance {
   font-size: 0.78rem;
   color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.star-icon {
+  width: 12px;
+  height: 12px;
+  color: #F59E0B;
 }

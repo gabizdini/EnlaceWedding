@@ -5,10 +5,10 @@ import CTA from '../../components/CTA/CTA'
 import './Fornecedores.css'
 
 const vendors = [
-  { name: 'Ana Fotografia', category: 'Fotografo', rating: '\u2B50 4.9', distance: '2.3 km' },
-  { name: 'Bella Maquiagem', category: 'Maquiadora', rating: '\u2B50 4.8', distance: '1.5 km' },
-  { name: 'Decor Eventos', category: 'Decorador', rating: '\u2B50 4.7', distance: '3.1 km' },
-  { name: 'Sabor & Arte', category: 'Buffet', rating: '\u2B50 4.9', distance: '4.0 km' },
+  { name: 'Ana Fotografia', category: 'Fotografo', rating: '4.9', distance: '2.3 km' },
+  { name: 'Bella Maquiagem', category: 'Maquiadora', rating: '4.8', distance: '1.5 km' },
+  { name: 'Decor Eventos', category: 'Decorador', rating: '4.7', distance: '3.1 km' },
+  { name: 'Sabor & Arte', category: 'Buffet', rating: '4.9', distance: '4.0 km' },
 ]
 
 function Fornecedores() {
@@ -98,7 +98,7 @@ function Fornecedores() {
                   <div>
                     <strong>Rafael Buffet</strong>
                     <span className="preview-cat">Buffet</span>
-                    <span className="preview-rating">\u2B50 4.8 \u2022 5.2 km</span>
+                    <span className="preview-rating">4.8 \u2022 5.2 km</span>
                   </div>
                 </div>
                 <div className="supplier-preview-card">
@@ -108,7 +108,7 @@ function Fornecedores() {
                   <div>
                     <strong>Clara Flores</strong>
                     <span className="preview-cat">Decoracao</span>
-                    <span className="preview-rating">\u2B50 4.9 \u2022 1.8 km</span>
+                    <span className="preview-rating">4.9 \u2022 1.8 km</span>
                   </div>
                 </div>
               </div>
