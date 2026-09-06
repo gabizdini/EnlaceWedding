@@ -1,27 +1,42 @@
 .vendors-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
   align-items: start;
 }
 
-.map-placeholder {
+.vendors-map {
   background: var(--white);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
   border: 1px solid rgba(48, 60, 42, 0.08);
 }
 
-.map-placeholder svg {
-  width: 100%;
-  height: auto;
+.vendors-map-header {
+  padding: 16px 20px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(48, 60, 42, 0.08);
 }
 
-.map-label {
-  text-align: center;
-  font-size: 0.8rem;
+.vendors-map-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--purple);
+  flex-shrink: 0;
+}
+
+.vendors-map-header span {
+  font-size: 0.82rem;
+  font-weight: 600;
   color: var(--text-secondary);
-  margin-top: 12px;
+}
+
+.vendors-map .map-container {
+  border-radius: 0;
 }
 
 .vendors-list {

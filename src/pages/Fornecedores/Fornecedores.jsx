@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import VendorCard from '../../components/VendorCard/VendorCard'
+import MapaFornecedores from '../../components/MapaFornecedores/MapaFornecedores'
 import CTA from '../../components/CTA/CTA'
 import './Fornecedores.css'
 
 const vendors = [
-  { name: 'Ana Fotografia', category: 'Fotografo', rating: '4.9', distance: '2.3 km' },
-  { name: 'Bella Maquiagem', category: 'Maquiadora', rating: '4.8', distance: '1.5 km' },
-  { name: 'Decor Eventos', category: 'Decorador', rating: '4.7', distance: '3.1 km' },
-  { name: 'Sabor & Arte', category: 'Buffet', rating: '4.9', distance: '4.0 km' },
+  { name: 'Vini Pessoa', category: 'Fotografo', rating: '4.9', distance: '1.2 km' },
+  { name: 'Luara Buffet', category: 'Espaco e Buffet', rating: '4.8', distance: '0.8 km' },
+  { name: 'Naty Decoracoes em Eventos', category: 'Decoracoes', rating: '4.7', distance: '1.5 km' },
+  { name: 'Josi Oliveira Beauty Studio', category: 'Maquiadora', rating: '4.9', distance: '0.5 km' },
 ]
 
 function Fornecedores() {
@@ -32,19 +33,11 @@ function Fornecedores() {
           />
           <div className="vendors-layout">
             <div className="vendors-map">
-              <div className="map-placeholder">
-                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="300" height="250" rx="12" fill="#F0EDFF"/>
-                  <circle cx="150" cy="125" r="40" fill="rgba(108,92,231,0.15)" stroke="#6C5CE7" strokeWidth="2" strokeDasharray="4 4"/>
-                  <circle cx="150" cy="125" r="8" fill="#6C5CE7"/>
-                  <circle cx="100" cy="100" r="5" fill="#A29BFE"/>
-                  <circle cx="200" cy="90" r="5" fill="#A29BFE"/>
-                  <circle cx="180" cy="170" r="5" fill="#A29BFE"/>
-                  <circle cx="110" cy="160" r="5" fill="#A29BFE"/>
-                  <path d="M145 125L150 115L155 125" stroke="#6C5CE7" strokeWidth="2"/>
-                </svg>
-                <p className="map-label">Visualizacao do mapa</p>
+              <div className="vendors-map-header">
+                <span className="vendors-map-dot" />
+                <span>Mapa dos fornecedores</span>
               </div>
+              <MapaFornecedores />
             </div>
             <div className="vendors-list">
               {vendors.map((v) => (
@@ -98,7 +91,7 @@ function Fornecedores() {
                   <div>
                     <strong>Rafael Buffet</strong>
                     <span className="preview-cat">Buffet</span>
-                    <span className="preview-rating">4.8 \u2022 5.2 km</span>
+                    <span className="preview-rating">4.8 5.2 km</span>
                   </div>
                 </div>
                 <div className="supplier-preview-card">
@@ -108,7 +101,7 @@ function Fornecedores() {
                   <div>
                     <strong>Clara Flores</strong>
                     <span className="preview-cat">Decoracao</span>
-                    <span className="preview-rating">4.9 \u2022 1.8 km</span>
+                    <span className="preview-rating">4.9 1.8 km</span>
                   </div>
                 </div>
               </div>

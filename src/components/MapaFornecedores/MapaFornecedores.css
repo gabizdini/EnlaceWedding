@@ -1,0 +1,33 @@
+.map-container {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  outline: none;
+}
+
+.map-container .leaflet-pane {
+  z-index: 0;
+}
+
+.map-container .leaflet-tooltip {
+  background: var(--purple);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: inherit;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.map-container .leaflet-tooltip-top::before {
+  border-top-color: var(--purple);
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+  }
+}
