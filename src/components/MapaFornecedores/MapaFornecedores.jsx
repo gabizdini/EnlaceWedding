@@ -3,11 +3,15 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './MapaFornecedores.css'
 
-delete L.Icon.Default.prototype._getIconUrl
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+const orangeIcon = new L.DivIcon({
+  className: 'orange-marker',
+  html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="28" height="42">
+    <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24C24 5.4 18.6 0 12 0z" fill="#B85C38" stroke="#9A4A2C" stroke-width="1.5"/>
+    <circle cx="12" cy="11" r="5" fill="white"/>
+  </svg>`,
+  iconSize: [28, 42],
+  iconAnchor: [14, 42],
+  popupAnchor: [0, -36],
 })
 
 const locais = [
@@ -27,7 +31,7 @@ export default function MapaFornecedores() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {locais.map(local => (
-        <Marker key={local.id} position={[local.lat, local.lng]}>
+        <Marker key={local.id} position={[local.lat, local.lng]} icon={orangeIcon}>
           <Tooltip direction="top" offset={[0, -10]} opacity={1}>
             {local.nome}
           </Tooltip>
