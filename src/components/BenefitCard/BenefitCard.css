@@ -39,3 +39,15 @@
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+.benefit-link {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--purple);
+  transition: var(--transition);
+}
+
+.benefit-card:hover .benefit-link {
+  color: var(--purple-dark);
+}

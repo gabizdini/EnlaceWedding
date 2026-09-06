@@ -6,7 +6,7 @@ const navLinks = [
   { path: '/', label: 'Início' },
   { path: '/como-funciona', label: 'Como funciona' },
   { path: '/recursos', label: 'Recursos' },
-  { path: '/fornecedores', label: 'Para fornecedores' },
+  { path: '/fornecedores', label: 'Fornecedores' },
   { path: '/sobre', label: 'Sobre nós' },
   { path: '/governanca', label: 'Governança' },
   { path: '/gestao-ti', label: 'Gestão de TI' },

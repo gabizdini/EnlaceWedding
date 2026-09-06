@@ -7,7 +7,7 @@ import heroImgMobile from '../../assets/images/sequel-wedding-buque.png'
 import './Home.css'
 
 const benefits = [
-  { icon: <MapPin />, title: 'Fornecedores locais', description: 'Encontre profissionais próximos ao seu evento.' },
+  { icon: <MapPin />, title: 'Fornecedores locais', description: 'Encontre profissionais próximos ao seu evento.', link: '/fornecedores' },
   { icon: <ClipboardList />, title: 'Planejamento completo', description: 'Organize tarefas, prazos e compromissos.' },
   { icon: <Coins />, title: 'Orçamento', description: 'Tenha controle dos gastos do casamento.' },
   { icon: <Lightbulb />, title: 'Inspirações', description: 'Salve referências para encontrar o seu estilo.' },
@@ -48,7 +48,7 @@ function Home() {
         <div className="container">
           <div className="benefits-grid">
             {benefits.map((b) => (
-              <BenefitCard key={b.title} icon={b.icon} title={b.title} description={b.description} />
+              <BenefitCard key={b.title} icon={b.icon} title={b.title} description={b.description} link={b.link} />
             ))}
           </div>
         </div>
