@@ -6,9 +6,9 @@ import CTA from '../../components/CTA/CTA'
 import './Fornecedores.css'
 
 const vendors = [
-  { name: 'Vini Pessoa', category: 'Fotografo', rating: '4.9', distance: '1.2 km' },
-  { name: 'Luara Buffet', category: 'Espaco e Buffet', rating: '4.8', distance: '0.8 km' },
-  { name: 'Naty Decoracoes em Eventos', category: 'Decoracoes', rating: '4.7', distance: '1.5 km' },
+  { name: 'Vini Pessoa', category: 'Fotógrafo', rating: '4.9', distance: '1.2 km' },
+  { name: 'Luara Buffet', category: 'Espaço e Buffet', rating: '4.8', distance: '0.8 km' },
+  { name: 'Naty Decorações em Eventos', category: 'Decorações', rating: '4.7', distance: '1.5 km' },
   { name: 'Josi Oliveira Beauty Studio', category: 'Maquiadora', rating: '4.9', distance: '0.5 km' },
 ]
 
@@ -18,7 +18,7 @@ function Fornecedores() {
       <section className="page-hero">
         <div className="container">
           <span className="page-hero-badge">Fornecedores</span>
-          <h1>Encontre profissionais perto de voce.</h1>
+          <h1>Encontre profissionais perto de você.</h1>
           <p>O Enlace conecta clientes a fornecedores locais verificados e bem avaliados.</p>
         </div>
       </section>
@@ -28,8 +28,8 @@ function Fornecedores() {
         <div className="container">
           <SectionTitle
             subtitle="Busca local"
-            title="Fornecedores na sua regiao"
-            description="Explore profissionais proximos ao local do seu evento."
+            title="Fornecedores na sua região"
+            description="Explore profissionais próximos ao local do seu evento."
           />
           <div className="vendors-layout">
             <div className="vendors-map">
@@ -56,7 +56,7 @@ function Fornecedores() {
               <SectionTitle
                 subtitle="Para fornecedores"
                 title="Conecte seu trabalho a novos clientes."
-                description="Divulgue seus servicos e seja encontrado por pessoas que estao planejando seu grande dia."
+                description="Divulgue seus serviços e seja encontrado por pessoas que estão planejando seu grande dia."
               />
               <div className="supplier-benefits">
                 <div className="supplier-benefit">
@@ -65,11 +65,11 @@ function Fornecedores() {
                 </div>
                 <div className="supplier-benefit">
                   <span className="check-icon">&#10003;</span>
-                  <span>Divulgacao dos servicos</span>
+                  <span>Divulgação dos serviços</span>
                 </div>
                 <div className="supplier-benefit">
                   <span className="check-icon">&#10003;</span>
-                  <span>Avaliacoes de clientes</span>
+                  <span>Avaliações de clientes</span>
                 </div>
                 <div className="supplier-benefit">
                   <span className="check-icon">&#10003;</span>
@@ -100,7 +100,7 @@ function Fornecedores() {
                   </div>
                   <div>
                     <strong>Clara Flores</strong>
-                    <span className="preview-cat">Decoracao</span>
+                    <span className="preview-cat">Decoração</span>
                     <span className="preview-rating">4.9 1.8 km</span>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ function Fornecedores() {
 
       <CTA
         title="Quer ser encontrado?"
-        description="Cadastre seu negocio e comece a receber solicitacoes."
+        description="Cadastre seu negócio e comece a receber solicitações."
         buttonText="Quero ser fornecedor"
         buttonTo="/fornecedores"
       />

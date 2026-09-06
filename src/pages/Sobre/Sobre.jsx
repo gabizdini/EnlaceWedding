@@ -7,9 +7,9 @@ function Sobre() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="page-hero-badge">Sobre nos</span>
+          <span className="page-hero-badge">Sobre nós</span>
           <h1>Tecnologia que conecta sonhos.</h1>
-          <p>Conheca a Enlace Tecnologia e nossa missao de transformar o mercado de eventos.</p>
+          <p>Conheça a Enlace Tecnologia e nossa missão de transformar o mercado de eventos.</p>
         </div>
       </section>
 
@@ -20,31 +20,31 @@ function Sobre() {
               <SectionTitle
                 subtitle="Quem somos"
                 title="A Enlace Tecnologia"
-                description="Somos uma empresa de desenvolvimento de software especializada em solucoes digitais para o mercado de eventos, casamentos e servicos locais."
+                description="Somos uma empresa de desenvolvimento de software especializada em soluções digitais para o mercado de eventos, casamentos e serviços locais."
                 center={false}
               />
               <p className="about-text">
-                Nascemos da necessidade de simplificar o planejamento de casamentos, conectando clientes a fornecedores locais de forma rapida e confiavel.
+                Nascemos da necessidade de simplificar o planejamento de casamentos, conectando clientes a fornecedores locais de forma rápida e confiável.
               </p>
               <p className="about-text">
-                O Enlace Wedding e nossa principal solucao: uma plataforma completa que reune planejamento, orcamento, convidados, inspiracoes e busca de fornecedores em um so lugar.
+                O Enlace Wedding é nossa principal solução: uma plataforma completa que reune planejamento, orçamento, convidados, inspirações e busca de fornecedores em um só lugar.
               </p>
             </div>
             <div className="about-cards">
               <div className="about-card">
                 <div className="about-card-icon">1</div>
-                <h3>Nossa Missao</h3>
-                <p>Simplificar o planejamento de casamentos com tecnologia acessivel e humanizada.</p>
+                <h3>Nossa Missão</h3>
+                <p>Simplificar o planejamento de casamentos com tecnologia acessível e humanizada.</p>
               </div>
               <div className="about-card">
                 <div className="about-card-icon">2</div>
-                <h3>Nossa Visao</h3>
+                <h3>Nossa Visão</h3>
                 <p>Ser a principal plataforma de planejamento de casamentos do Brasil.</p>
               </div>
               <div className="about-card">
                 <div className="about-card-icon">3</div>
                 <h3>Nossos Valores</h3>
-                <p>Inovacao, qualidade, seguranca e foco no cliente.</p>
+                <p>Inovação, qualidade, segurança e foco no cliente.</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ function Sobre() {
       </section>
 
       <CTA
-        title="Conheca nosso projeto"
+        title="Conheça nosso projeto"
         description="Veja como o Enlace Wedding foi concebido."
         buttonText="Ver projeto"
         buttonTo="/projeto"

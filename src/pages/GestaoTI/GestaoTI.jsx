@@ -7,9 +7,9 @@ function GestaoTI() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="page-hero-badge">Gestao de TI</span>
-          <h1>Gestao de TI</h1>
-          <p>Processos criticos e indicadores que garantem a excelencia da plataforma.</p>
+          <span className="page-hero-badge">Gestão de TI</span>
+          <h1>Gestão de TI</h1>
+          <p>Processos críticos e indicadores que garantem a excelência da plataforma.</p>
         </div>
       </section>
 
@@ -17,29 +17,29 @@ function GestaoTI() {
         <div className="container">
           <SectionTitle
             subtitle="Processos"
-            title="Processos criticos"
+            title="Processos críticos"
             description="Os processos essenciais que sustentam o Enlace Wedding."
           />
           <div className="process-grid">
             <div className="process-card">
-              <h3>Desenvolvimento e manutencao</h3>
-              <p>Processo continuo de criacao, atualizacao e correcao do software da plataforma.</p>
+              <h3>Desenvolvimento e manutenção</h3>
+              <p>Processo contínuo de criação, atualização e correção do software da plataforma.</p>
             </div>
             <div className="process-card">
-              <h3>Seguranca e protecao de dados</h3>
-              <p>Garantia da seguranca das informacoes dos usuarios e conformidade com leis.</p>
+              <h3>Segurança e proteção de dados</h3>
+              <p>Garantia da segurança das informações dos usuários e conformidade com leis.</p>
             </div>
             <div className="process-card">
-              <h3>Cadastro e validacao de fornecedores</h3>
-              <p>Processo de verificacao e aprovacao dos profissionais cadastrados.</p>
+              <h3>Cadastro e validação de fornecedores</h3>
+              <p>Processo de verificação e aprovação dos profissionais cadastrados.</p>
             </div>
             <div className="process-card">
-              <h3>Gestao de incidentes e suporte</h3>
-              <p>Monitoramento, resolucao de problemas e atendimento aos usuarios.</p>
+              <h3>Gestão de incidentes e suporte</h3>
+              <p>Monitoramento, resolução de problemas e atendimento aos usuários.</p>
             </div>
             <div className="process-card">
-              <h3>Backup e recuperacao de dados</h3>
-              <p>Copias de seguranca regulares e plano de recuperacao ante desastres.</p>
+              <h3>Backup e recuperação de dados</h3>
+              <p>Cópias de segurança regulares e plano de recuperação ante desastres.</p>
             </div>
           </div>
         </div>
@@ -50,37 +50,37 @@ function GestaoTI() {
           <SectionTitle
             subtitle="Indicadores"
             title="KPIs"
-            description="Indicadores chave de desempenho para acompanhar a saude do sistema."
+            description="Indicadores chave de desempenho para acompanhar a saúde do sistema."
           />
           <div className="kpi-grid">
             <div className="kpi-card">
               <h3>Disponibilidade da plataforma</h3>
-              <p>Percentual de tempo em que o sistema esta acessivel aos usuarios.</p>
+              <p>Percentual de tempo em que o sistema está acessível aos usuários.</p>
             </div>
             <div className="kpi-card">
-              <h3>Tempo medio de resolucao</h3>
+              <h3>Tempo médio de resolução</h3>
               <p>Tempo necessario para resolver chamados de suporte.</p>
             </div>
             <div className="kpi-card">
-              <h3>Usuarios ativos</h3>
-              <p>Numero de usuarios que utilizam a plataforma mensalmente.</p>
+              <h3>Usuários ativos</h3>
+              <p>Número de usuários que utilizam a plataforma mensalmente.</p>
             </div>
             <div className="kpi-card">
               <h3>Taxa de conversao</h3>
               <p>Percentual de buscas que resultam em contato com fornecedor.</p>
             </div>
             <div className="kpi-card">
-              <h3>Incidentes de seguranca</h3>
-              <p>Numero de incidentes de seguranca registrados no periodo.</p>
+              <h3>Incidentes de segurança</h3>
+              <p>Número de incidentes de segurança registrados no período.</p>
             </div>
           </div>
         </div>
       </section>
 
       <CTA
-        title="Quer ver a governanca?"
-        description="Conheca os papeis e estrutura de governanca de TI."
-        buttonText="Ver Governanca"
+        title="Quer ver a governança?"
+        description="Conheça os papéis e estrutura de governança de TI."
+        buttonText="Ver Governança"
         buttonTo="/governanca"
       />
     </>

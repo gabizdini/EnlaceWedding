@@ -4,9 +4,9 @@ import CTA from '../../components/CTA/CTA'
 import './ComoFunciona.css'
 
 const steps = [
-  { number: '01', title: 'Conte-nos sobre seu casamento', description: 'Compartilhe a data, local e suas preferencias para comecarmos a planejar.' },
-  { number: '02', title: 'Encontre fornecedores', description: 'Explore profissionais perto de voce e compare avaliacoes e precos.' },
-  { number: '03', title: 'Organize seu planejamento', description: 'Use checklist, orcamento e lista de convidados em um so lugar.' },
+  { number: '01', title: 'Conte-nos sobre seu casamento', description: 'Compartilhe a data, local e suas preferências para começarmos a planejar.' },
+  { number: '02', title: 'Encontre fornecedores', description: 'Explore profissionais perto de você e compare avaliações e preços.' },
+  { number: '03', title: 'Organize seu planejamento', description: 'Use checklist, orçamento e lista de convidados em um só lugar.' },
   { number: '04', title: 'Viva o seu grande dia', description: 'Aproveite cada momento com tudo organizado e pronto.' },
 ]
 
@@ -17,7 +17,7 @@ function ComoFunciona() {
         <div className="container">
           <span className="page-hero-badge">Como funciona</span>
           <h1>Como funciona o Enlace Wedding?</h1>
-          <p>Em quatro passos simples, voce comeca a planejar o casamento dos seus sonhos.</p>
+          <p>Em quatro passos simples, você começa a planejar o casamento dos seus sonhos.</p>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ function ComoFunciona() {
       <section className="section section-alt">
         <div className="container">
           <SectionTitle
-            subtitle="Jornada do usuario"
+            subtitle="Jornada do usuário"
             title="Do planejamento ao grande dia"
             description="Acompanhe como o Enlace Wedding facilita cada etapa do seu casamento."
           />
@@ -47,21 +47,21 @@ function ComoFunciona() {
             <div className="journey-card">
               <div className="journey-icon">2</div>
               <h3>Busca inteligente</h3>
-              <p>Encontre fornecedores proximos com avaliacoes reais.</p>
+              <p>Encontre fornecedores próximos com avaliações reais.</p>
             </div>
             <div className="journey-card">
               <div className="journey-icon">3</div>
-              <h3>Organizacao total</h3>
-              <p>Gerencie orcamento, convidados e tarefas em um painel unico.</p>
+              <h3>Organização total</h3>
+              <p>Gerencie orçamento, convidados e tarefas em um painel único.</p>
             </div>
           </div>
         </div>
       </section>
 
       <CTA
-        title="Pronto para comecar?"
+        title="Pronto para começar?"
         description="Comece agora a planejar o casamento perfeito."
-        buttonText="Comecar a planejar"
+        buttonText="Começar a planejar"
         buttonTo="/"
       />
     </>

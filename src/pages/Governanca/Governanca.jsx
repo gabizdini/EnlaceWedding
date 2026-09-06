@@ -7,27 +7,27 @@ function Governanca() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="page-hero-badge">Governanca de TI</span>
-          <h1>Tecnologia com proposito, seguranca e governanca.</h1>
-          <p>A Enlace busca alinhar tecnologia, estrategia de negocio, seguranca, privacidade e qualidade em todos os seus projetos.</p>
+          <span className="page-hero-badge">Governança de TI</span>
+          <h1>Tecnologia com propósito, segurança e governança.</h1>
+          <p>A Enlace busca alinhar tecnologia, estratégia de negócio, segurança, privacidade e qualidade em todos os seus projetos.</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <SectionTitle
-            subtitle="Papeis"
-            title="Papeis de Governanca de TI"
-            description="Conheca as responsabilidades de cada papel na governanca da empresa."
+            subtitle="Papéis"
+            title="Papéis de Governança de TI"
+            description="Conheça as responsabilidades de cada papel na governança da empresa."
           />
           <div className="roles-grid">
             <div className="role-card">
               <h3>Diretoria / CEO</h3>
-              <p>Define a estrategia geral da empresa e aprova investimentos em TI.</p>
+              <p>Define a estratégia geral da empresa e aprova investimentos em TI.</p>
             </div>
             <div className="role-card">
               <h3>Comite de TI</h3>
-              <p>Supervisiona decisoes estrategicas de tecnologia e alinhamento com o negocio.</p>
+              <p>Supervisiona decisões estratégicas de tecnologia e alinhamento com o negócio.</p>
             </div>
             <div className="role-card">
               <h3>Gerente de Projetos</h3>
@@ -35,15 +35,15 @@ function Governanca() {
             </div>
             <div className="role-card">
               <h3>DPO / Encarregado de Dados</h3>
-              <p>Garante conformidade com leis de protecao de dados e privacidade.</p>
+              <p>Garante conformidade com leis de proteção de dados e privacidade.</p>
             </div>
             <div className="role-card">
               <h3>Desenvolvedores</h3>
-              <p>Constroem e mantêm as solucoes tecnicas da plataforma.</p>
+              <p>Constroem e mantêm as soluções técnicas da plataforma.</p>
             </div>
             <div className="role-card">
               <h3>UX/UI Designer</h3>
-              <p>Projeta interfaces intuitivas e experiencias centradas no usuario.</p>
+              <p>Projeta interfaces intuitivas e experiências centradas no usuário.</p>
             </div>
           </div>
         </div>
@@ -54,20 +54,20 @@ function Governanca() {
           <SectionTitle
             subtitle="Estrutura"
             title="Infraestrutura e Arquitetura"
-            description="Visao geral da infraestrutura tecnologica que sustenta o Enlace Wedding."
+            description="Visão geral da infraestrutura tecnológica que sustenta o Enlace Wedding."
           />
           <div className="infra-cards">
             <div className="infra-card">
-              <h3>Principios de TI</h3>
-              <p>Seguranca, escalabilidade, disponibilidade e melhoramento continuo guiam nossas decisoes tecnicas.</p>
+              <h3>Princípios de TI</h3>
+              <p>Segurança, escalabilidade, disponibilidade e melhoramento contínuo guiam nossas decisões técnicas.</p>
             </div>
             <div className="infra-card">
               <h3>Arquitetura de TI</h3>
-              <p>Arquitetura baseada em servicos, com separacao clara entre frontend, backend e dados.</p>
+              <p>Arquitetura baseada em serviços, com separação clara entre frontend, backend e dados.</p>
             </div>
             <div className="infra-card">
               <h3>Priorizacao de investimentos</h3>
-              <p>Investimentos priorizados por impacto no negocio e retorno esperado.</p>
+              <p>Investimentos priorizados por impacto no negócio e retorno esperado.</p>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ function Governanca() {
 
       <CTA
         title="Quer saber mais?"
-        description="Conheca a gestao de TI da Enlace."
-        buttonText="Ver Gestao de TI"
+        description="Conheça a gestão de TI da Enlace."
+        buttonText="Ver Gestão de TI"
         buttonTo="/gestao-ti"
       />
     </>

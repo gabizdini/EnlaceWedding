@@ -9,7 +9,7 @@ function Projeto() {
         <div className="container">
           <span className="page-hero-badge">Projeto</span>
           <h1>Projeto Enlace Wedding</h1>
-          <p>Apresentacao do projeto simulado para o cliente ficticio.</p>
+          <p>Apresentação do projeto simulado para o cliente fictício.</p>
         </div>
       </section>
 
@@ -18,15 +18,15 @@ function Projeto() {
           <div className="project-grid">
             <div className="project-block">
               <h3>Cliente</h3>
-              <p>Empresa de organizacao de eventos de casamento, com experiencia no mercado local.</p>
+              <p>Empresa de organização de eventos de casamento, com experiência no mercado local.</p>
             </div>
             <div className="project-block">
               <h3>Problema</h3>
-              <p>Dificuldade dos clientes em encontrar fornecedores confiaveis proximos ao local do evento e organizar as etapas do casamento.</p>
+              <p>Dificuldade dos clientes em encontrar fornecedores confiáveis próximos ao local do evento e organizar as etapas do casamento.</p>
             </div>
             <div className="project-block">
-              <h3>Solucao proposta</h3>
-              <p>Desenvolvimento do Enlace Wedding: plataforma digital completa para planejamento e conexao com fornecedores.</p>
+              <h3>Solução proposta</h3>
+              <p>Desenvolvimento do Enlace Wedding: plataforma digital completa para planejamento e conexão com fornecedores.</p>
             </div>
           </div>
         </div>
@@ -44,9 +44,9 @@ function Projeto() {
               <ul>
                 <li>Busca de fornecedores locais</li>
                 <li>Checklist e cronograma</li>
-                <li>Orcamento e controle de gastos</li>
+                <li>Orçamento e controle de gastos</li>
                 <li>Lista de convidados</li>
-                <li>Inspiracoes</li>
+                <li>Inspirações</li>
               </ul>
             </div>
             <div className="scope-card">
@@ -66,7 +66,7 @@ function Projeto() {
                 <li>CI/CD</li>
                 <li>Code Review</li>
                 <li>Testes automatizados</li>
-                <li>Deploy continuo</li>
+                <li>Deploy contínuo</li>
               </ul>
             </div>
           </div>

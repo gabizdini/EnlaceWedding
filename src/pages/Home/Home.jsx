@@ -7,10 +7,10 @@ import heroImgMobile from '../../assets/images/sequel-wedding-buque.png'
 import './Home.css'
 
 const benefits = [
-  { icon: <MapPin />, title: 'Fornecedores locais', description: 'Encontre profissionais proximos ao seu evento.' },
+  { icon: <MapPin />, title: 'Fornecedores locais', description: 'Encontre profissionais próximos ao seu evento.' },
   { icon: <ClipboardList />, title: 'Planejamento completo', description: 'Organize tarefas, prazos e compromissos.' },
-  { icon: <Coins />, title: 'Orcamento', description: 'Tenha controle dos gastos do casamento.' },
-  { icon: <Lightbulb />, title: 'Inspiracoes', description: 'Salve referencias para encontrar o seu estilo.' },
+  { icon: <Coins />, title: 'Orçamento', description: 'Tenha controle dos gastos do casamento.' },
+  { icon: <Lightbulb />, title: 'Inspirações', description: 'Salve referências para encontrar o seu estilo.' },
 ]
 
 function Home() {
@@ -26,14 +26,14 @@ function Home() {
               Seu casamento, <span className="highlight">planejado em cada detalhe.</span>
             </h1>
             <p className="hero-subtitle">
-              Encontre fornecedores, organize seu planejamento e transforme suas inspiracoes em realidade em um so lugar.
+              Encontre fornecedores, organize seu planejamento e transforme suas inspirações em realidade em um só lugar.
             </p>
             <div className="hero-buttons">
-              <Link to="/" className="btn-primary">Comecar a planejar</Link>
+              <Link to="/" className="btn-primary">Começar a planejar</Link>
               <Link to="/como-funciona" className="btn-secondary">Conhecer a plataforma</Link>
             </div>
             <div className="hero-search-card">
-              <h3>Encontre fornecedores na sua regiao</h3>
+              <h3>Encontre fornecedores na sua região</h3>
               <div className="search-form">
                 <input type="text" placeholder="Digite sua cidade" defaultValue="Machado, MG" readOnly />
                 <button type="button">Buscar</button>
@@ -56,8 +56,8 @@ function Home() {
 
       {/* CTA final */}
       <CTA
-        title="Pronto para comecar a planejar?"
-        description="Tenha suas ideias, tarefas e fornecedores organizados em um so lugar."
+        title="Pronto para começar a planejar?"
+        description="Tenha suas ideias, tarefas e fornecedores organizados em um só lugar."
         buttonText="Como funciona?"
         buttonTo="/como-funciona"
       />

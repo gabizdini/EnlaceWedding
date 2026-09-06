@@ -11,9 +11,9 @@ L.Icon.Default.mergeOptions({
 })
 
 const locais = [
-  { id: 1, nome: 'Vini Pessoa', categoria: 'Fotografo', lat: -21.6864389, lng: -45.9282652, endereco: 'Alameda Castilho, 46 - Machado, MG, 37750-000' },
-  { id: 2, nome: 'Luara Buffet', categoria: 'Espaco e Buffet', lat: -21.6799667, lng: -45.9132586, endereco: 'Av. Dr. Renato Azeredo, 2 - Machado, MG, 37750-000' },
-  { id: 3, nome: 'Naty Decoracoes em Eventos', categoria: 'Decoracoes', lat: -21.6693655, lng: -45.9254459, endereco: 'Rua Dr Gabriel Barbosa, 43 - Machado, MG' },
+  { id: 1, nome: 'Vini Pessoa', categoria: 'Fotógrafo', lat: -21.6864389, lng: -45.9282652, endereco: 'Alameda Castilho, 46 - Machado, MG, 37750-000' },
+  { id: 2, nome: 'Luara Buffet', categoria: 'Espaço e Buffet', lat: -21.6799667, lng: -45.9132586, endereco: 'Av. Dr. Renato Azeredo, 2 - Machado, MG, 37750-000' },
+  { id: 3, nome: 'Naty Decorações em Eventos', categoria: 'Decorações', lat: -21.6693655, lng: -45.9254459, endereco: 'Rua Dr Gabriel Barbosa, 43 - Machado, MG' },
   { id: 4, nome: 'Josi Oliveira Beauty Studio', categoria: 'Maquiadora', lat: -21.6829237, lng: -45.9170724, endereco: 'R. Durval Martins Ramos, 130 - Centro, Machado, MG, 37750-000' },
 ]
 

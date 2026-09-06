@@ -48,7 +48,7 @@ function Contato() {
                 <p>contato@enlacetecnologia.com.br</p>
               </div>
               <div className="contact-info-card">
-                <h3>Localizacao</h3>
+                <h3>Localização</h3>
                 <p>Machado, MG — Brasil</p>
               </div>
               <div className="contact-info-card">
@@ -59,7 +59,7 @@ function Contato() {
                   <Link to="/" className="social-link">GitHub</Link>
                 </div>
               </div>
-              <p className="contact-note">Este e um projeto academico. Os dados acima sao ficticios.</p>
+              <p className="contact-note">Este é um projeto acadêmico. Os dados acima são fictícios.</p>
             </div>
           </div>
         </div>

@@ -3,13 +3,13 @@ import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 const navLinks = [
-  { path: '/', label: 'Inicio' },
+  { path: '/', label: 'Início' },
   { path: '/como-funciona', label: 'Como funciona' },
   { path: '/recursos', label: 'Recursos' },
   { path: '/fornecedores', label: 'Para fornecedores' },
-  { path: '/sobre', label: 'Sobre nos' },
-  { path: '/governanca', label: 'Governanca' },
-  { path: '/gestao-ti', label: 'Gestao de TI' },
+  { path: '/sobre', label: 'Sobre nós' },
+  { path: '/governanca', label: 'Governança' },
+  { path: '/gestao-ti', label: 'Gestão de TI' },
   { path: '/projeto', label: 'Projeto' },
   { path: '/contato', label: 'Contato' },
 ]

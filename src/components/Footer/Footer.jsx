@@ -3,15 +3,15 @@ import './Footer.css'
 
 const footerLinks = {
   enlace: [
-    { path: '/', label: 'Inicio' },
+    { path: '/', label: 'Início' },
     { path: '/como-funciona', label: 'Como funciona' },
     { path: '/recursos', label: 'Recursos' },
     { path: '/fornecedores', label: 'Para fornecedores' },
   ],
   empresa: [
-    { path: '/sobre', label: 'Sobre nos' },
-    { path: '/governanca', label: 'Governanca' },
-    { path: '/gestao-ti', label: 'Gestao de TI' },
+    { path: '/sobre', label: 'Sobre nós' },
+    { path: '/governanca', label: 'Governança' },
+    { path: '/gestao-ti', label: 'Gestão de TI' },
     { path: '/projeto', label: 'Projeto' },
   ],
   informacoes: [
@@ -60,7 +60,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-column">
-            <h4>Informacoes</h4>
+            <h4>Informações</h4>
             <ul>
               {footerLinks.informacoes.map((link) => (
                 <li key={link.label}>
@@ -73,7 +73,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom container">
-        <p>&copy; 2026 Enlace Tecnologia — Projeto academico</p>
+        <p>&copy; 2026 Enlace Tecnologia — Projeto acadêmico</p>
       </div>
     </footer>
   )
