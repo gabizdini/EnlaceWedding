@@ -3,6 +3,7 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import VendorCard from '../../components/VendorCard/VendorCard'
 import MapaFornecedores from '../../components/MapaFornecedores/MapaFornecedores'
 import CTA from '../../components/CTA/CTA'
+import imgPlanejadoras from '../../assets/images/mulheres-de-tiro-medio-trabalhando-como-planejadoras-de-casamento.jpg'
 import './Fornecedores.css'
 
 const vendors = [
@@ -83,27 +84,8 @@ function Fornecedores() {
               <Link to="/fornecedores" className="btn-primary">Quero ser fornecedor</Link>
             </div>
             <div className="supplier-visual">
-              <div className="supplier-card-stack">
-                <div className="supplier-preview-card">
-                  <div className="preview-avatar">
-                    <span>R</span>
-                  </div>
-                  <div>
-                    <strong>Rafael Buffet</strong>
-                    <span className="preview-cat">Buffet</span>
-                    <span className="preview-rating">4.8 5.2 km</span>
-                  </div>
-                </div>
-                <div className="supplier-preview-card">
-                  <div className="preview-avatar lilac">
-                    <span>C</span>
-                  </div>
-                  <div>
-                    <strong>Clara Flores</strong>
-                    <span className="preview-cat">Decoração</span>
-                    <span className="preview-rating">4.9 1.8 km</span>
-                  </div>
-                </div>
+              <div className="supplier-image-wrapper">
+                <img src={imgPlanejadoras} alt="Planejadoras de casamento trabalhando" className="supplier-image" />
               </div>
             </div>
           </div>
