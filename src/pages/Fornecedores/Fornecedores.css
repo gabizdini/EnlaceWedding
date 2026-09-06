@@ -9,7 +9,7 @@
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: 24px;
-  border: 1px solid rgba(108, 92, 231, 0.08);
+  border: 1px solid rgba(48, 60, 42, 0.08);
 }
 
 .map-placeholder svg {
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(108, 92, 231, 0.1);
+  background: rgba(48, 60, 42, 0.1);
   color: var(--purple);
   border-radius: 50%;
   font-size: 0.75rem;

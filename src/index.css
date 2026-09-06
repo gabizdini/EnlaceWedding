@@ -1,14 +1,14 @@
 :root {
-  --purple: #6C5CE7;
-  --purple-dark: #4B3BBE;
-  --lilac: #A29BFE;
-  --bg-light: #F7F5FF;
-  --white: #FFFFFF;
-  --text-primary: #17183B;
-  --text-secondary: #68697F;
-  --shadow-sm: 0 2px 8px rgba(108, 92, 231, 0.08);
-  --shadow-md: 0 4px 16px rgba(108, 92, 231, 0.12);
-  --shadow-lg: 0 8px 32px rgba(108, 92, 231, 0.16);
+  --purple: #394832;
+  --purple-dark: #303C2A;
+  --lilac: #C5A978;
+  --bg-light: #F5F1E8;
+  --white: #E8E1D4;
+  --text-primary: #20271D;
+  --text-secondary: #7D8870;
+  --shadow-sm: 0 2px 8px rgba(48, 60, 42, 0.08);
+  --shadow-md: 0 4px 16px rgba(48, 60, 42, 0.12);
+  --shadow-lg: 0 8px 32px rgba(48, 60, 42, 0.16);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -160,7 +160,7 @@ button {
 .page-hero-badge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(108, 92, 231, 0.08);
+  background: rgba(48, 60, 42, 0.08);
   color: var(--purple);
   font-size: 0.8rem;
   font-weight: 600;

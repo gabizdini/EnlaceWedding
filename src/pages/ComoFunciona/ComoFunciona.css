@@ -15,7 +15,7 @@
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: 32px;
-  border: 1px solid rgba(108, 92, 231, 0.08);
+  border: 1px solid rgba(48, 60, 42, 0.08);
   text-align: center;
   transition: var(--transition);
 }

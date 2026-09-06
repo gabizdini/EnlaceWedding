@@ -22,7 +22,7 @@
   background: var(--bg-light);
   border-radius: var(--radius-lg);
   padding: 28px;
-  border: 1px solid rgba(108, 92, 231, 0.08);
+  border: 1px solid rgba(48, 60, 42, 0.08);
   transition: var(--transition);
 }
 
