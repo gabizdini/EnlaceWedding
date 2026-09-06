@@ -12,9 +12,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--purple);
+  color: #B85C38;
   margin-bottom: 12px;
-  background: rgba(48, 60, 42, 0.08);
+  background: rgba(184, 92, 56, 0.08);
   padding: 6px 16px;
   border-radius: 100px;
 }

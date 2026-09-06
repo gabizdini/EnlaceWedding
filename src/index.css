@@ -1,14 +1,18 @@
 :root {
-  --purple: #394832;
-  --purple-dark: #303C2A;
-  --lilac: #C5A978;
-  --bg-light: #F5F1E8;
-  --white: #E8E1D4;
-  --text-primary: #20271D;
-  --text-secondary: #7D8870;
-  --shadow-sm: 0 2px 8px rgba(48, 60, 42, 0.08);
-  --shadow-md: 0 4px 16px rgba(48, 60, 42, 0.12);
-  --shadow-lg: 0 8px 32px rgba(48, 60, 42, 0.16);
+  --purple: #B85C38;
+  --purple-dark: #9A4A2C;
+  --lilac: #C6A875;
+  --bg-light: #F7F2E8;
+  --white: #E9DFD0;
+  --text-primary: #29231D;
+  --text-secondary: #756B60;
+  --card-bg: #E9DFD0;
+  --card-hover: #F0E5D6;
+  --accent: #B85C38;
+  --gold: #C6A875;
+  --shadow-sm: 0 2px 8px rgba(41, 35, 29, 0.08);
+  --shadow-md: 0 4px 16px rgba(41, 35, 29, 0.12);
+  --shadow-lg: 0 8px 32px rgba(41, 35, 29, 0.16);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -160,8 +164,8 @@ button {
 .page-hero-badge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(48, 60, 42, 0.08);
-  color: var(--purple);
+  background: rgba(184, 92, 56, 0.1);
+  color: #B85C38;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 100px;

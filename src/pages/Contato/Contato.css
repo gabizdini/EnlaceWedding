@@ -27,7 +27,7 @@
 .form-group input,
 .form-group textarea {
   padding: 12px 16px;
-  border: 1px solid rgba(48, 60, 42, 0.15);
+  border: 1px solid rgba(41, 35, 29, 0.15);
   border-radius: var(--radius-sm);
   font-family: inherit;
   font-size: 0.95rem;
@@ -55,7 +55,7 @@
   background: var(--bg-light);
   border-radius: var(--radius-lg);
   padding: 24px;
-  border: 1px solid rgba(48, 60, 42, 0.08);
+  border: 1px solid rgba(41, 35, 29, 0.08);
 }
 
 .contact-info-card h3 {

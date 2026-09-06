@@ -8,7 +8,7 @@
   background: var(--bg-light);
   border-radius: var(--radius-lg);
   padding: 32px;
-  border: 1px solid rgba(48, 60, 42, 0.08);
+  border: 1px solid rgba(41, 35, 29, 0.08);
 }
 
 .project-block h3 {
@@ -34,7 +34,7 @@
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: 28px;
-  border: 1px solid rgba(48, 60, 42, 0.08);
+  border: 1px solid rgba(41, 35, 29, 0.08);
 }
 
 .scope-card h3 {

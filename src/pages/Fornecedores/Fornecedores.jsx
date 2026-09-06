@@ -3,7 +3,7 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import VendorCard from '../../components/VendorCard/VendorCard'
 import MapaFornecedores from '../../components/MapaFornecedores/MapaFornecedores'
 import CTA from '../../components/CTA/CTA'
-import imgPlanejadoras from '../../assets/images/mulheres-de-tiro-medio-trabalhando-como-planejadoras-de-casamento.jpg'
+import imgPlanejadoras from '../../assets/images/mulheres-organização-casamento.png'
 import './Fornecedores.css'
 
 const vendors = [
