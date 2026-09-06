@@ -25,9 +25,8 @@ const center = [-21.678, -45.921]
 
 export default function MapaFornecedores() {
   return (
-    <MapContainer center={center} zoom={14} className="map-container">
+    <MapContainer center={center} zoom={14} className="map-container" attributionControl={false}>
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {locais.map(local => (

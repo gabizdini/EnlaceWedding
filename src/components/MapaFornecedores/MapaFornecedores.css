@@ -3,6 +3,7 @@
   height: 420px;
   position: relative;
   outline: none;
+  overflow: hidden;
 }
 
 .map-container .leaflet-pane {
