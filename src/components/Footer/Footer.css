@@ -25,6 +25,7 @@
 .footer-logo-icon {
   width: 28px;
   height: 28px;
+  object-fit: contain;
 }
 
 .footer-tagline {

@@ -23,14 +23,14 @@ function Home() {
           <div className="hero-content">
             <span className="hero-badge">Enlace Wedding</span>
             <h1 className="hero-title">
-              Seu casamento, <span className="highlight">planejado em cada detalhe.</span>
+              Seu casamento <span className="highlight">planejado em cada detalhe.</span>
             </h1>
             <p className="hero-subtitle">
               Encontre fornecedores, organize seu planejamento e transforme suas inspirações em realidade em um só lugar.
             </p>
             <div className="hero-buttons">
               <Link to="/" className="btn-primary">Começar a planejar</Link>
-              <Link to="/como-funciona" className="btn-secondary">Conhecer a plataforma</Link>
+              <Link to="/sobre" className="btn-secondary">Conhecer a plataforma</Link>
             </div>
             <div className="hero-search-card">
               <h3>Encontre fornecedores na sua região</h3>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logoWhite from '../../assets/images/logo-enlace-wedding/white.svg'
 import './Navbar.css'
 
 const navLinks = [
@@ -25,24 +26,14 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <svg className="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 28C16 28 4 20 4 12C4 8.68629 6.68629 6 10 6C12.2208 6 14.1594 7.26476 15.0818 9.10352L16 10.8809L16.9182 9.10352C17.8406 7.26476 19.7792 6 22 6C25.3137 6 28 8.68629 28 12C28 20 16 28 16 28Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            <circle cx="12" cy="14" r="2" stroke="currentColor" strokeWidth="1.5"/>
-            <circle cx="20" cy="14" r="2" stroke="currentColor" strokeWidth="1.5"/>
-            <path d="M14 17C14 17 15 19 16 19C17 19 18 17 18 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
+          <img src={logoWhite} alt="Enlace" className="logo-icon" />
           <span className="logo-text">Enlace</span>
         </Link>
 
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <div className="navbar-menu-header">
             <Link to="/" className="navbar-menu-logo" onClick={closeMenu}>
-              <svg className="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C16 28 4 20 4 12C4 8.68629 6.68629 6 10 6C12.2208 6 14.1594 7.26476 15.0818 9.10352L16 10.8809L16.9182 9.10352C17.8406 7.26476 19.7792 6 22 6C25.3137 6 28 8.68629 28 12C28 20 16 28 16 28Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="12" cy="14" r="2" stroke="currentColor" strokeWidth="1.5"/>
-                <circle cx="20" cy="14" r="2" stroke="currentColor" strokeWidth="1.5"/>
-                <path d="M14 17C14 17 15 19 16 19C17 19 18 17 18 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
+              <img src={logoWhite} alt="Enlace" className="logo-icon" />
               <span className="logo-text">Enlace</span>
             </Link>
             <button className="navbar-menu-close" onClick={toggleMenu} aria-label="Fechar menu">
