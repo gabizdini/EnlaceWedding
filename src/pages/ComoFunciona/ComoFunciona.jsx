@@ -59,10 +59,10 @@ function ComoFunciona() {
       </section>
 
       <CTA
-        title="Pronto para começar?"
-        description="Comece agora a planejar o casamento perfeito."
-        buttonText="Começar a planejar"
-        buttonTo="/"
+        title="Quer conhecer os recursos da plataforma?"
+        description="Explore todas as ferramentas disponíveis para planejar seu casamento."
+        buttonText="Ver recursos"
+        buttonTo="/recursos"
       />
     </>
   )

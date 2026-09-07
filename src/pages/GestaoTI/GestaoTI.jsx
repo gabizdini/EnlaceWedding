@@ -78,10 +78,10 @@ function GestaoTI() {
       </section>
 
       <CTA
-        title="Quer ver a governança?"
-        description="Conheça os papéis e estrutura de governança de TI."
-        buttonText="Ver Governança"
-        buttonTo="/governanca"
+        title="Quer entrar em contato?"
+        description="Fale com a equipe do Enlace Tecnologia."
+        buttonText="Fale conosco"
+        buttonTo="/contato"
       />
     </>
   )

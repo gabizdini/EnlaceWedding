@@ -74,8 +74,8 @@ function Governanca() {
       </section>
 
       <CTA
-        title="Quer saber mais?"
-        description="Conheça a gestão de TI da Enlace."
+        title="Quer ver os processos e indicadores de TI?"
+        description="Conheça os KPIs e processos críticos que sustentam o Enlace Wedding."
         buttonText="Ver Gestão de TI"
         buttonTo="/gestao-ti"
       />

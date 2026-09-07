@@ -116,10 +116,10 @@ function Sobre() {
       </section> */}
 
       <CTA
-        title="Quer entrar em contato?"
-        description="Fale com a equipe do Enlace Tecnologia."
-        buttonText="Fale conosco"
-        buttonTo="/contato"
+        title="Quer conhecer a governança de TI?"
+        description="Saiba como garantimos segurança, qualidade e governança na plataforma."
+        buttonText="Ver governança"
+        buttonTo="/governanca"
       />
     </>
   )

@@ -93,10 +93,10 @@ function Fornecedores() {
       </section>
 
       <CTA
-        title="Quer ser encontrado?"
-        description="Cadastre seu negócio e comece a receber solicitações."
-        buttonText="Quero ser fornecedor"
-        buttonTo="/fornecedores"
+        title="Quer saber quem somos?"
+        description="Conheça a Enlace Wedding e nossa missão."
+        buttonText="Sobre nós"
+        buttonTo="/sobre"
       />
     </>
   )

@@ -43,10 +43,10 @@ function Recursos() {
       </section>
 
       <CTA
-        title="Quer conhecer mais?"
-        description="Comece a planejar e descubra tudo que o Enlace pode fazer por você."
-        buttonText="Começar a planejar"
-        buttonTo="/"
+        title="Quer encontrar fornecedores na sua região?"
+        description="Explore profissionais perto de você com avaliações reais."
+        buttonText="Ver fornecedores"
+        buttonTo="/fornecedores"
       />
     </>
   )
