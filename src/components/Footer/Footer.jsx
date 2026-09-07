@@ -7,7 +7,7 @@ const footerLinks = {
     { path: '/', label: 'Início' },
     { path: '/como-funciona', label: 'Como funciona' },
     { path: '/recursos', label: 'Recursos' },
-    { path: '/fornecedores', label: 'Para fornecedores' },
+    { path: '/fornecedores', label: 'Fornecedores' },
   ],
   empresa: [
     { path: '/sobre', label: 'Sobre nós' },
