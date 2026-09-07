@@ -9,7 +9,7 @@ function Contato() {
         <div className="container">
           <span className="page-hero-badge">Contato</span>
           <h1>Fale conosco</h1>
-          <p>Entre em contato com a equipe do Enlace Tecnologia.</p>
+          <p>Entre em contato com a equipe do Enlace Wedding.</p>
         </div>
       </section>
 
@@ -45,7 +45,7 @@ function Contato() {
             <div className="contact-info-area">
               <div className="contact-info-card">
                 <h3>E-mail</h3>
-                <p>contato@enlacetecnologia.com.br</p>
+                <p>contato@enlacewedding.com.br</p>
               </div>
               <div className="contact-info-card">
                 <h3>Localização</h3>

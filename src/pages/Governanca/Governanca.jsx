@@ -26,7 +26,7 @@ function Governanca() {
               <p>Define a estratégia geral da empresa e aprova investimentos em TI.</p>
             </div>
             <div className="role-card">
-              <h3>Comite de TI</h3>
+              <h3>Comitê de TI</h3>
               <p>Supervisiona decisões estratégicas de tecnologia e alinhamento com o negócio.</p>
             </div>
             <div className="role-card">

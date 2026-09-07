@@ -13,7 +13,6 @@ const footerLinks = {
     { path: '/sobre', label: 'Sobre nós' },
     { path: '/governanca', label: 'Governança' },
     { path: '/gestao-ti', label: 'Gestão de TI' },
-    { path: '/projeto', label: 'Projeto' },
   ],
   informacoes: [
     { path: '/contato', label: 'Contato' },

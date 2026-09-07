@@ -9,7 +9,6 @@ import Fornecedores from './pages/Fornecedores/Fornecedores'
 import Sobre from './pages/Sobre/Sobre'
 import Governanca from './pages/Governanca/Governanca'
 import GestaoTI from './pages/GestaoTI/GestaoTI'
-import Projeto from './pages/Projeto/Projeto'
 import Contato from './pages/Contato/Contato'
 
 function ScrollToTop() {
@@ -33,7 +32,6 @@ function App() {
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/governanca" element={<Governanca />} />
             <Route path="/gestao-ti" element={<GestaoTI />} />
-            <Route path="/projeto" element={<Projeto />} />
             <Route path="/contato" element={<Contato />} />
           </Routes>
         </main>
