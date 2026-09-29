@@ -16,34 +16,30 @@ function Governanca() {
       <section className="section">
         <div className="container">
           <SectionTitle
-            subtitle="Papéis"
+            subtitle="Equipe"
             title="Papéis de Governança de TI"
-            description="Conheça as responsabilidades de cada papel na governança da empresa."
+            description="Conheça os integrantes da equipe e as responsabilidades de cada um na governança da empresa."
           />
           <div className="roles-grid">
             <div className="role-card">
-              <h3>Diretoria / CEO</h3>
-              <p>Define a estratégia geral da empresa e aprova investimentos em TI.</p>
+              <h3>Laurene</h3>
+              <p className="role-position">Diretora/CEO</p>
+              <p>Estratégia geral e decisões/investimentos em TI.</p>
             </div>
             <div className="role-card">
-              <h3>Comitê de TI</h3>
-              <p>Supervisiona decisões estratégicas de tecnologia e alinhamento com o negócio.</p>
+              <h3>Joice</h3>
+              <p className="role-position">Gerente de Projetos</p>
+              <p>Prazos, entregas, recursos e conformidade com LGPD.</p>
             </div>
             <div className="role-card">
-              <h3>Gerente de Projetos</h3>
-              <p>Coordena entregas, prazos e recursos dos projetos de desenvolvimento.</p>
+              <h3>Gabrieli</h3>
+              <p className="role-position">Desenvolvedora + UX/UI</p>
+              <p>Frontend, backend e banco de dados; interfaces e experiência do usuário.</p>
             </div>
             <div className="role-card">
-              <h3>DPO / Encarregado de Dados</h3>
-              <p>Garante conformidade com leis de proteção de dados e privacidade.</p>
-            </div>
-            <div className="role-card">
-              <h3>Desenvolvedores</h3>
-              <p>Constroem e mantêm as soluções técnicas da plataforma.</p>
-            </div>
-            <div className="role-card">
-              <h3>UX/UI Designer</h3>
-              <p>Projeta interfaces intuitivas e experiências centradas no usuário.</p>
+              <h3>Melissa</h3>
+              <p className="role-position">Qualidade (QA) e Suporte</p>
+              <p>Testes, monitoramento de incidentes e atendimento aos usuários.</p>
             </div>
           </div>
         </div>
