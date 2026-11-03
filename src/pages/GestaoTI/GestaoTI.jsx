@@ -78,10 +78,10 @@ function GestaoTI() {
       </section>
 
       <CTA
-        title="Quer entrar em contato?"
-        description="Fale com a equipe do Enlace Tecnologia."
-        buttonText="Fale conosco"
-        buttonTo="/contato"
+        title="Como cuidamos dos nossos serviços?"
+        description="Atendimento, tratamento de falhas, mudanças controladas e melhoria contínua em quatro blocos."
+        buttonText="Ver nossa forma de cuidar"
+        buttonTo="/cuidados-servicos"
       />
     </>
   )

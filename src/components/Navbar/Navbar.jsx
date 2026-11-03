@@ -11,6 +11,7 @@ const navLinks = [
   { path: '/sobre', label: 'Sobre nós' },
   { path: '/governanca', label: 'Governança' },
   { path: '/gestao-ti', label: 'Gestão de TI' },
+  { path: '/cuidados-servicos', label: 'Cuidados com o serviço' },
   { path: '/contato', label: 'Contato' },
 ]
 

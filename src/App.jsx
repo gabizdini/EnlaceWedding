@@ -9,6 +9,7 @@ import Fornecedores from './pages/Fornecedores/Fornecedores'
 import Sobre from './pages/Sobre/Sobre'
 import Governanca from './pages/Governanca/Governanca'
 import GestaoTI from './pages/GestaoTI/GestaoTI'
+import CuidadosServicos from './pages/CuidadosServicos/CuidadosServicos'
 import Contato from './pages/Contato/Contato'
 import { LocalProvider } from './context/LocalProvider'
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/sobre" element={<Sobre />} />
               <Route path="/governanca" element={<Governanca />} />
               <Route path="/gestao-ti" element={<GestaoTI />} />
+              <Route path="/cuidados-servicos" element={<CuidadosServicos />} />
               <Route path="/contato" element={<Contato />} />
             </Routes>
           </LocalProvider>
