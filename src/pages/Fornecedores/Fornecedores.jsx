@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import VendorCard from '../../components/VendorCard/VendorCard'
 import MapaFornecedores from '../../components/MapaFornecedores/MapaFornecedores'
 import CTA from '../../components/CTA/CTA'
+import { LOCAL_PADRAO, useLocal } from '../../context/localizacao'
 import imgPlanejadoras from '../../assets/images/mulheres-organização-casamento.png'
 import './Fornecedores.css'
 
@@ -13,7 +14,30 @@ const vendors = [
   { name: 'Josi Oliveira Beauty Studio', category: 'Maquiadora', rating: '4.9', distance: '0.5 km' },
 ]
 
+/**
+ * Os fornecedores padrão ficam em Machado-MG. Quando a cidade buscada é outra,
+ * eles são ocultados (os dados continuam intactos). Este limite evita esconder
+ * tudo caso o usuário pesquise "Machado" por conta própria.
+ */
+function estaEmMachado(local) {
+  const margem = 0.05 // ≈ 5 km
+  return (
+    Math.abs(local.lat - LOCAL_PADRAO.lat) < margem &&
+    Math.abs(local.lng - LOCAL_PADRAO.lng) < margem
+  )
+}
+
 function Fornecedores() {
+  const { state } = useLocation()
+  const { local } = useLocal()
+
+  // Só usa a cidade buscada quando a navegação veio da busca da Home.
+  // Links do menu/rodapé (sem a bandeira) e recarregamentos caem no padrão.
+  const veioDaBusca = state?.deBusca === true && local !== null
+  const localAtual = veioDaBusca ? local : LOCAL_PADRAO
+  const exibirFornecedores = !veioDaBusca || estaEmMachado(localAtual)
+  const zoom = veioDaBusca ? 13 : 14
+
   return (
     <>
       <section className="page-hero">
@@ -37,13 +61,34 @@ function Fornecedores() {
               <div className="vendors-map-header">
                 <span className="vendors-map-dot" />
                 <span>Mapa dos fornecedores</span>
+                <span className="vendors-map-city">{localAtual.nome}</span>
               </div>
-              <MapaFornecedores />
+              <MapaFornecedores
+                lat={localAtual.lat}
+                lng={localAtual.lng}
+                zoom={zoom}
+                mostrarFornecedores={exibirFornecedores}
+              />
             </div>
             <div className="vendors-list">
-              {vendors.map((v) => (
-                <VendorCard key={v.name} name={v.name} category={v.category} rating={v.rating} distance={v.distance} />
-              ))}
+              {exibirFornecedores ? (
+                vendors.map((v) => (
+                  <VendorCard key={v.name} name={v.name} category={v.category} rating={v.rating} distance={v.distance} />
+                ))
+              ) : (
+                <div className="vendors-empty">
+                  <p className="vendors-empty-title">
+                    Nenhum fornecedor cadastrado em {localAtual.nome} ainda.
+                  </p>
+                  <p className="vendors-empty-text">
+                    Ainda não buscamos profissionais por esta cidade. Assim que
+                    cadastrarmos fornecedores locais, eles aparecem aqui.
+                  </p>
+                  <Link to="/fornecedores" className="vendors-empty-link">
+                    Ver os fornecedores de Machado-MG
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>

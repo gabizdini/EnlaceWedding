@@ -35,6 +35,20 @@
   color: var(--text-secondary);
 }
 
+.vendors-map-header .vendors-map-city {
+  margin-left: auto;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple);
+  background: rgba(184, 92, 56, 0.1);
+  border-radius: 999px;
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .vendors-map .map-container {
   border-radius: 0;
 }
@@ -43,6 +57,42 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.vendors-empty {
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px dashed rgba(41, 35, 29, 0.28);
+  border-radius: var(--radius-lg);
+}
+
+.vendors-empty-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.vendors-empty-text {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.vendors-empty-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.vendors-empty-link:hover {
+  color: var(--purple-dark);
 }
 
 .supplier-layout {

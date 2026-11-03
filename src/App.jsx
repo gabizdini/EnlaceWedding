@@ -10,6 +10,7 @@ import Sobre from './pages/Sobre/Sobre'
 import Governanca from './pages/Governanca/Governanca'
 import GestaoTI from './pages/GestaoTI/GestaoTI'
 import Contato from './pages/Contato/Contato'
+import { LocalProvider } from './context/LocalProvider'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -24,16 +25,18 @@ function App() {
       <div className="app">
         <Navbar />
         <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/como-funciona" element={<ComoFunciona />} />
-            <Route path="/recursos" element={<Recursos />} />
-            <Route path="/fornecedores" element={<Fornecedores />} />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/governanca" element={<Governanca />} />
-            <Route path="/gestao-ti" element={<GestaoTI />} />
-            <Route path="/contato" element={<Contato />} />
-          </Routes>
+          <LocalProvider>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/como-funciona" element={<ComoFunciona />} />
+              <Route path="/recursos" element={<Recursos />} />
+              <Route path="/fornecedores" element={<Fornecedores />} />
+              <Route path="/sobre" element={<Sobre />} />
+              <Route path="/governanca" element={<Governanca />} />
+              <Route path="/gestao-ti" element={<GestaoTI />} />
+              <Route path="/contato" element={<Contato />} />
+            </Routes>
+          </LocalProvider>
         </main>
         <Footer />
       </div>

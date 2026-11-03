@@ -1,5 +1,7 @@
-import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet'
+import { useEffect } from 'react'
+import { MapContainer, TileLayer, Marker, Popup, Tooltip, useMap } from 'react-leaflet'
 import L from 'leaflet'
+import { LOCAL_PADRAO } from '../../context/localizacao'
 import 'leaflet/dist/leaflet.css'
 import './MapaFornecedores.css'
 
@@ -21,15 +23,42 @@ const locais = [
   { id: 4, nome: 'Josi Oliveira Beauty Studio', categoria: 'Maquiadora', lat: -21.6829237, lng: -45.9170724, endereco: 'R. Durval Martins Ramos, 130 - Centro, Machado, MG, 37750-000' },
 ]
 
-const center = [-21.678, -45.921]
+/**
+ * Reposiciona o mapa para a cidade indicada sempre que lat/lng/zoom mudarem.
+ * O `center` do MapContainer só vale na montagem do componente, por isso
+ * usamos `useMap()` para mover o mapa depois.
+ */
+function IrParaLocal({ lat, lng, zoom }) {
+  const map = useMap()
 
-export default function MapaFornecedores() {
+  useEffect(() => {
+    const centro = map.getCenter()
+    const mesmoLocal =
+      Math.abs(centro.lat - lat) < 1e-9 &&
+      Math.abs(centro.lng - lng) < 1e-9 &&
+      map.getZoom() === zoom
+
+    if (mesmoLocal) return
+
+    map.setView([lat, lng], zoom, { animate: true })
+  }, [lat, lng, zoom, map])
+
+  return null
+}
+
+export default function MapaFornecedores({
+  lat = LOCAL_PADRAO.lat,
+  lng = LOCAL_PADRAO.lng,
+  zoom = 14,
+  mostrarFornecedores = true,
+}) {
   return (
-    <MapContainer center={center} zoom={14} className="map-container" attributionControl={false}>
+    <MapContainer center={[lat, lng]} zoom={zoom} className="map-container" attributionControl={false}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {locais.map(local => (
+      <IrParaLocal lat={lat} lng={lng} zoom={zoom} />
+      {mostrarFornecedores && locais.map(local => (
         <Marker key={local.id} position={[local.lat, local.lng]} icon={orangeIcon}>
           <Tooltip direction="top" offset={[0, -10]} opacity={1}>
             {local.nome}
