@@ -21,6 +21,20 @@
   border-bottom: 1px solid rgba(41, 35, 29, 0.08);
 }
 
+/* Busca de cidade acima do mapa (mesmo campo da Home) */
+.vendors-busca {
+  padding: 16px 20px 14px;
+  border-bottom: 1px solid rgba(41, 35, 29, 0.08);
+}
+
+.vendors-busca-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
 .vendors-map-dot {
   width: 8px;
   height: 8px;

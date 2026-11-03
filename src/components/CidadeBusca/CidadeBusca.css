@@ -1,0 +1,137 @@
+/* Campo de busca de cidade (reutilizável na Home e nos Fornecedores).
+   As declarações repetem o visual de `.search-form` (Home.css) para que o
+   componente funcione sozinho em qualquer página. */
+
+.busca-cidade {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.busca-cidade-campo {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  /* acima dos panes do Leaflet (z-index até 700) quando usado sobre o mapa */
+  z-index: 1050;
+}
+
+.busca-cidade input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(41, 35, 29, 0.2);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  background: rgba(247, 242, 232, 0.9);
+}
+
+.busca-cidade input:focus {
+  outline: none;
+  border-color: #B85C38;
+  box-shadow: 0 0 0 3px rgba(184, 92, 56, 0.1);
+}
+
+.busca-cidade button {
+  padding: 10px 20px;
+  background: var(--purple);
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.busca-cidade button:hover:not(:disabled) {
+  background: var(--purple-dark);
+}
+
+.busca-cidade button:disabled {
+  background: var(--purple-dark);
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+/* Dropdown de sugestões */
+.busca-cidade-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 264px;
+  overflow-y: auto;
+  background: var(--white);
+  border: 1px solid rgba(41, 35, 29, 0.14);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: 1050;
+}
+
+.busca-cidade-opcao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 14px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.busca-cidade-opcao.ativa,
+.busca-cidade-opcao:hover {
+  background: rgba(184, 92, 56, 0.12);
+}
+
+.busca-cidade-nome {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.busca-cidade-uf {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple);
+  background: rgba(184, 92, 56, 0.1);
+  border-radius: 999px;
+  padding: 2px 9px;
+  flex-shrink: 0;
+}
+
+.busca-cidade-vazio {
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.busca-cidade-erro {
+  margin-top: 10px;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #9B2C2C;
+  background: rgba(155, 44, 44, 0.08);
+  border: 1px solid rgba(155, 44, 44, 0.25);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 768px) {
+  .busca-cidade {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .busca-cidade input {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .busca-cidade button {
+    width: 100%;
+    padding: 12px;
+  }
+}

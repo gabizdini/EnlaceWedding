@@ -1,7 +1,8 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import VendorCard from '../../components/VendorCard/VendorCard'
 import MapaFornecedores from '../../components/MapaFornecedores/MapaFornecedores'
+import CidadeBusca from '../../components/CidadeBusca/CidadeBusca'
 import CTA from '../../components/CTA/CTA'
 import { LOCAL_PADRAO, useLocal } from '../../context/localizacao'
 import imgPlanejadoras from '../../assets/images/mulheres-organização-casamento.png'
@@ -29,7 +30,17 @@ function estaEmMachado(local) {
 
 function Fornecedores() {
   const { state } = useLocation()
-  const { local } = useLocal()
+  const navigate = useNavigate()
+  const { local, setLocal } = useLocal()
+
+  /**
+   * Busca feita no próprio card do mapa: atualiza o local e sinaliza a
+   * navegação como vinda da busca. Como o pathname não muda, não há scroll.
+   */
+  function aoEncontrar(encontrada) {
+    setLocal(encontrada)
+    navigate('/fornecedores', { state: { deBusca: true } })
+  }
 
   // Só usa a cidade buscada quando a navegação veio da busca da Home.
   // Links do menu/rodapé (sem a bandeira) e recarregamentos caem no padrão.
@@ -58,6 +69,10 @@ function Fornecedores() {
           />
           <div className="vendors-layout">
             <div className="vendors-map">
+              <div className="vendors-busca">
+                <span className="vendors-busca-title">Pesquisar outra cidade</span>
+                <CidadeBusca valorInicial={localAtual.nome} onBuscar={aoEncontrar} />
+              </div>
               <div className="vendors-map-header">
                 <span className="vendors-map-dot" />
                 <span>Mapa dos fornecedores</span>
